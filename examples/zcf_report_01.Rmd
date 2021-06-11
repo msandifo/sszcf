@@ -14,7 +14,7 @@ knit: pagedown::chrome_print
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message = FALSE)
  
- 
+  
 ```
 
 
