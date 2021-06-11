@@ -70,11 +70,7 @@ This is particularly problematic as is still the case that solar ownership is hi
 
 On top of this existing inequity, the rapid and ongoing influx of solar has begun to add new costs. Not only will solar contribute little to reducing peak demand, it might start to drive expansion of infrastructure to allow greater export of solar power, and hence cost. In the immediate term, these costs might be small —but they are still costs. In the near future, more expensive augmentations might be required. Without augmentation or expansion, the alternative is to restrict new solar owners from accessing the grid or exporting electricity to their full potential.
 
-<<<<<<< HEAD
-=======
-![Figure 2. In locations where domestic solar output can exceed,  local demand the reversal of flows  on DNSP zone substations such as Morphet Vale east in South Australia, adds to costs to grid operators.](figs/min-system-load.png)
->>>>>>> 1e016d0c1501eda0cd4aeb3ecf5dd248d6b4dddb
-
+   
 
 This raises all sorts of equity questions. Is it fair for potential new adopters of solar to be locked out of the system? Who should have their solar generation constrained? Or alternatively, should the grid be augmented to allow more solar and equal access to solar, in which case who pays? It seems extremely unjust for those that cannot access or afford solar to foot the bill for those that can.
 

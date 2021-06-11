@@ -11,13 +11,8 @@
     --color-mbox: rgba(0, 0, 0, 0.2);
     --running-title-width: 2.5in;
     --screen-pages-spacing: 5mm;
-<<<<<<< HEAD
     --main-color: #FF9900;
     --main-font: "Inter";
-=======
-    --main-color: #c78039;
-    --main-font: "Roboto";
->>>>>>> 1e016d0c1501eda0cd4aeb3ecf5dd248d6b4dddb
     --header-font: "Inter";
   }
 
@@ -283,11 +278,7 @@ p, ul, ol, blockquote {
   /* do not break captions */
   .caption {
     font-size: 10pt;
-<<<<<<< HEAD
     color:  #FF9900;  
-=======
-    color: darkgreen;  
->>>>>>> 1e016d0c1501eda0cd4aeb3ecf5dd248d6b4dddb
      break-inside: avoid;
     break-after: avoid;
   }
