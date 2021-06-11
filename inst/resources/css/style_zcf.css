@@ -12,7 +12,7 @@
     --running-title-width: 2.5in;
     --screen-pages-spacing: 5mm;
     --main-color: #c78039;
-    --main-font: "Gelasio";
+    --main-font: "Roboto";
     --header-font: "Inter";
   }
 
@@ -191,9 +191,9 @@ h1.title {
 }
 
 /* ------------------------ Fonts ---------------------------- */
-@import 'https://fonts.googleapis.com/css?family=Gelasio';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
 @import 'https://fonts.googleapis.com/css?family=Inter';
-
+ 
 p, ul, a, ol {
   font-family: var(--main-font);
 }
@@ -243,11 +243,13 @@ h2 {
 }
 
 /* text */
-p, ul, ol {
+p, ul, ol, blockquote {
   margin-right: 15%;
     font-size: 14pt;
     color: #663300; /* #ffffff; */
 }
+
+
 
 /* --------------------- CSS Fragmentation --------------------------- */
 /* page breaks; aka CSS fragmentation */
@@ -258,7 +260,7 @@ p, ul, ol {
   .section > h1, .section > h2, .section > h3, .section > h4, .section > h5, .section > h6 {
     break-after: avoid;
   }
-  .footenotes {
+  .footenotes { 
     break-before: always;
     break-after: always;
   }
@@ -267,8 +269,10 @@ p, ul, ol {
   }
 
   /* do not break captions */
-  caption {
-    break-inside: avoid;
+  .caption {
+    font-size: 10pt;
+    color: darkgreen;  
+     break-inside: avoid;
     break-after: avoid;
   }
 
@@ -277,6 +281,6 @@ p, ul, ol {
     font-size: .9em;
   }
   img {
-    max-width: 100%;
+    max-width: 85%;
   }
 
