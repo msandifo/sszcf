@@ -73,7 +73,7 @@ On top of this existing inequity, the rapid and ongoing influx of solar has begu
 This raises all sorts of equity questions. Is it fair for potential new adopters of solar to be locked out of the system? Who should have their solar generation constrained? Or alternatively, should the grid be augmented to allow more solar and equal access to solar, in which case who pays? It seems extremely unjust for those that cannot access or afford solar to foot the bill for those that can.
 
 
-![Figure 2. In regions where domestic solar output now regulalry exceeds local demand, such as Morphet Vale east in South Australia,  flow reversals on DNSP zone substations is adding costs to grid operation.](figs/min-system-load.png)
+![Figure 2. In regions where domestic solar output now regularly exceeds local demand, such as Morphet Vale east in South Australia,  flow reversals on DNSP zone substations is adding costs to grid operation.](figs/min-system-load.png)
 
 These issues and questions have been kicking around the electricity sector for close to a decade. In the last 12 months a reform proposal has been co-designed with social service and environment groups and network business to address some of these issues. These have been forcefully resisted by some who have chosen to frame this as a “tax on solar”. The ensuing debate has emphasised individualism and the interests of solar owners, and illustrated a lack of a collective ethic around the rights to electricity, which is an essential service.
 
