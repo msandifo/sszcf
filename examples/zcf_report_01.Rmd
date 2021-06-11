@@ -23,23 +23,20 @@ knitr::opts_chunk$set(message = FALSE)
 
 
 
-## Sunshot Industries {-}
+### Sunshot Industries {-}
 
-Sunshot Industries invests transformational capital and know-how in energy intensive businesses, seeking to exit once the business is on a cost-advantaged, low carbon footing.
+Sunshot Industries  invests capital and know-how in energy intensive businesses  with  the prospect for delivering substantial CO2e abatement.
 
-Sunshot Industries specifically  seeks to help  sectors with clear prospects to establish a competitive position in the top quartile of global energy/emission intensive industry with  the prospect for delivering substantial CO2e abatement.
-
-Sunshot Industries is built on the vision espoused by Prof Ross Garnaut, in his books Superpower and Reset, that Australia is well placed to take  a leading role in the new low carbon economy.
+Sunshot Industries builds on the vision espoused by Ross Garnaut, in his books Superpower and Reset, that Australia could and should take a leading role in the new low carbon economy. 
 
 
-> "We have unparalleled renewable energy resources.  We also have the necessary scientific skills. 
-> Australia could be the natural home for an increasing proportion of global industry. 
-> But how do we make this happen?"
+> *With unparalleled renewable energy resources and the necessary scientific skills, Australia is the natural home for an increasing proportion of global industry in a zero carbon future.*
 
-> `r tufte::quote_footer('--- Ross Garnaut, Superpower 2019')`
+### Sunshot ZCF {-}
 
+Sunshot ZCF helps Sunshot Industries and its industry and government partners  forge new solutions focussed on the question 
 
-Sunshot ZCF provides advisory to Sunshot Industries and partners pertinent to  the question "How do we make this happen?"
+> *How do we make this happen?*
 
 ```{r echo=FALSE, out.width="50%", fig.align="center"}
 
@@ -76,7 +73,7 @@ On top of this existing inequity, the rapid and ongoing influx of solar has begu
 This raises all sorts of equity questions. Is it fair for potential new adopters of solar to be locked out of the system? Who should have their solar generation constrained? Or alternatively, should the grid be augmented to allow more solar and equal access to solar, in which case who pays? It seems extremely unjust for those that cannot access or afford solar to foot the bill for those that can.
 
 
-![Figure 2. In locations where domestic solar output can exceed,  local demand the reversal of flows  on DNSP zone substations such as Morphet Vale east in South Australia, adds to costs to grid operators.](figs/min-system-load.png)
+![Figure 2. In regions where domestic solar output now regulalry exceeds local demand, such as Morphet Vale east in South Australia,  flow reversals on DNSP zone substations is adding costs to grid operation.](figs/min-system-load.png)
 
 These issues and questions have been kicking around the electricity sector for close to a decade. In the last 12 months a reform proposal has been co-designed with social service and environment groups and network business to address some of these issues. These have been forcefully resisted by some who have chosen to frame this as a “tax on solar”. The ensuing debate has emphasised individualism and the interests of solar owners, and illustrated a lack of a collective ethic around the rights to electricity, which is an essential service.
 
