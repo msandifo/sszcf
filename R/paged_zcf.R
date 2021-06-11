@@ -15,7 +15,7 @@ paged_zcf <-
            front_img = "0",
            img_to_dark = TRUE,
            logo_to_white = FALSE,
-           other_css = NULL,
+           other_css =   pkg_resource("css/style_zcf.css"),
            ...) {
     # arguments
     main_css <-
