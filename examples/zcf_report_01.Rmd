@@ -9,6 +9,7 @@ output:
     logo_to_white: FALSE
   pagedown::html_paged:
 knit: pagedown::chrome_print
+bibliography: references.bib
 ---
   
 ```{r setup, include=FALSE}
@@ -65,7 +66,7 @@ This is a problem for those without solar. While non-solar households receive so
 
 This is particularly problematic as is still the case that solar ownership is highly skewed to wealthy demographics. High-wealth households disproportionately receive the benefits (and subsidies) that solar can bring. Home ownership and the upfront costs of solar systems mean that low-wealth households are partly excluded from the benefits of solar, and the opportunity to share socially-funded subsidies.
 
-![Figure 1. Proportion of households with solar installations by wealth decile. 1 is the lowest wealth-decile,   10 is the highest (source Rohan Best).](figs/wealth-decile.png)
+![Figure 1. Proportion of households with solar installations by wealth decile. 1 is the lowest wealth-decile,   10 is the highest [@BEST2021126618]](figs/wealth-decile.png)
 
 
 On top of this existing inequity, the rapid and ongoing influx of solar has begun to add new costs. Not only will solar contribute little to reducing peak demand, it might start to drive expansion of infrastructure to allow greater export of solar power, and hence cost. In the immediate term, these costs might be small —but they are still costs. In the near future, more expensive augmentations might be required. Without augmentation or expansion, the alternative is to restrict new solar owners from accessing the grid or exporting electricity to their full potential.
@@ -87,6 +88,8 @@ Affordability and accessibility were and remain key objectives for the energy sy
 
 Unless solar system owners fairly contribute to the use of the grid, those least able to least able to pay or participate in the energy transition will foot the bill.
 
-Dylan McConnell
+ 
+\newpage
 
-June 7th, 2021
+## References {-}
+

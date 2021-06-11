@@ -282,6 +282,14 @@ p, ul, ol, blockquote {
      break-inside: avoid;
     break-after: avoid;
   }
+  
+  .csl-entry{
+    font-family: var(--main-font);
+    font-size: 12pt;
+    color: #663300;
+    break-inside: avoid;
+    break-after: avoid;
+  }
 
   /* misc elements */
   .subtitle span {
