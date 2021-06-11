@@ -1,0 +1,21 @@
+Package: szcf
+Title: Use of pagedown through templates
+Version: 0.1
+Description: This package is an in-house pre-formatted
+    templating for pagedown reprts prodcued by Sunshot's ZCF project.  
+    It helps generating nice and well-design PDF
+    using Rmarkdown without diving into CSS, modified from pagedreport
+License: MIT + file LICENSE
+Imports:
+    magick,
+    rsvg,
+    pagedown
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
