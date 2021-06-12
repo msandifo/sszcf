@@ -7,7 +7,9 @@ output:
   sszcf::paged_zcf:
     img_to_dark: TRUE
     logo_to_white: FALSE
+    number_sections: false
   pagedown::html_paged:
+    number_sections: false
 knit: pagedown::chrome_print
 bibliography: references.bib
 ---
@@ -23,7 +25,7 @@ knitr::opts_chunk$set(message = FALSE)
 
 
 
-### Sunshot Industries {-}
+### Sunshot Industries  
 
 Sunshot Industries  invests capital and know-how in energy intensive businesses  with  the prospect for delivering substantial CO2e abatement.
 
@@ -32,7 +34,7 @@ Sunshot Industries builds on the vision espoused by Ross Garnaut, in his books S
 
 > *With unparalleled renewable energy resources and the necessary scientific skills, Australia is the natural home for an increasing proportion of global industry in a zero carbon future.*
 
-### Sunshot ZCF {-}
+### Sunshot ZCF  
 
 Sunshot ZCF helps Sunshot Industries and its industry and government partners  forge new solutions focussed on the question 
 
@@ -47,7 +49,7 @@ Sunshot ZCF helps Sunshot Industries and its industry and government partners  f
 
 \newpage
 
-## Solar justice: Who should pay for the grid? {-}
+## Solar justice: Who should pay for the grid? 
  
 Rooftop solar has been one of the brighter spots in the chequered history of Australia’s climate and energy policy. Australia is at the front of the global pack, with the highest installation per capita. In 2020, a record breaking three gigawatts of rooftop solar was installed in Australia. That is comfortably more than the capacity of our biggest coal generator. Over 2.8 million houses now have solar systems installed. Another four gigawatts is expected to be installed in 2021.
 
@@ -63,7 +65,7 @@ This is a problem for those without solar. While non-solar households receive so
 
 This is particularly problematic as is still the case that solar ownership is highly skewed to wealthy demographics. High-wealth households disproportionately receive the benefits (and subsidies) that solar can bring. Home ownership and the upfront costs of solar systems mean that low-wealth households are partly excluded from the benefits of solar, and the opportunity to share socially-funded subsidies.
 
-![Figure 1. Proportion of households with solar installations by wealth decile. 1 is the lowest wealth-decile,   10 is the highest [@BEST2021126618]](figs/wealth-decile.png)
+![Figure 1. Proportion of households with solar installations by wealth decile. 1 is the lowest wealth-decile,   10 is the highest [@BEST2021106890]](figs/wealth-decile.png)
 
 
 On top of this existing inequity, the rapid and ongoing influx of solar has begun to add new costs. Not only will solar contribute little to reducing peak demand, it might start to drive expansion of infrastructure to allow greater export of solar power, and hence cost. In the immediate term, these costs might be small —but they are still costs. In the near future, more expensive augmentations might be required. Without augmentation or expansion, the alternative is to restrict new solar owners from accessing the grid or exporting electricity to their full potential.
@@ -88,5 +90,5 @@ Unless solar system owners fairly contribute to the use of the grid, those least
  
 \newpage
 
-## References {-}
+## References  
 
