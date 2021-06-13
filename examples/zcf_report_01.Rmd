@@ -67,7 +67,7 @@ This is particularly problematic as is still the case that solar ownership is hi
 
 <!-- ![Figure 1. Proportion of households with solar installations by wealth decile. 1 is the lowest wealth-decile,   10 is the highest [@BEST2021106890]](figs/wealth-decile.png) -->
 
-```{r fig1, fig.cap='Proportion of households with solar installations by wealth decile. 1 is the lowest wealth-decile,  10 is the highest. Data sourced from ABS 2017–18 Survey of Income and Housing, [@BEST2021106890].', echo=FALSE }
+```{r fig1, fig.cap='Proportion of households with solar installations by wealth decile (1 is the lowest,  10  highest). Data sourced from ABS 2017–18 Survey of Income and Housing, [@BEST2021106890].', echo=FALSE }
 
 library(ggplot2)
 data.file<- "data/solar_deciles.feather"
@@ -75,7 +75,10 @@ sd.df <-arrow::read_feather(data.file)
 ggplot(sd.df, aes(decile, households))+ 
   geom_bar(stat = "identity", width = .6, size=0, fill="orange")+
   ylim(c(0,30))+
-  hrbrthemes::theme_ipsum_tw()+
+  hrbrthemes::theme_ipsum_rc(base_size = 15, 
+                             axis_title_size = 15,
+                             axis_col = "#FF9900",
+                             grid_col = "#FF9900")+
 
   labs(#caption= "data sourced from ABS 2017–18 Survey of Income and Housing",
        y="% households", 
@@ -109,7 +112,10 @@ ggplot(mv.hour.df |>
          subset(month==this.month & name %in% c("minimum demand") & year %in% c(2010,2011, 2012,2014, 2017, 2018,2019)), 
        aes(hour, value, col=factor(year)))+
   facet_grid(~name)+
-  hrbrthemes::theme_ipsum_tw()+
+  hrbrthemes::theme_ipsum_rc(base_size = 15, 
+                             axis_title_size = 15,
+                             axis_col = "#FF9900",
+                             grid_col = "#FF9900")+
   theme(legend.position = c(.15,.3), legend.title = element_blank(),
         legend.background = element_rect(fill="white", colour="white"))+
   # facet_wrap(~month, ncol=4)+
