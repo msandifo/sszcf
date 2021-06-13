@@ -1,6 +1,8 @@
+library(ggplot2)
+
 source.file<- "data/solar_deciles.feather"
 sd.df <-arrow::read_feather(source.file)
-ggplot(sd.df, aes(decile, households))+ 
+plot.decile <-ggplot(sd.df, aes(decile, households))+ 
   geom_bar(stat = "identity", width = .6, size=0, fill="orange")+
   ylim(c(0,30))+
   hrbrthemes::theme_ipsum_tw()+
