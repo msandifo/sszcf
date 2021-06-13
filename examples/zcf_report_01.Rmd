@@ -12,11 +12,18 @@ output:
     number_sections: false
 knit: pagedown::chrome_print
 bibliography: references.bib
+language:
+  label:
+    fig: 'Fig. '
 ---
   
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message = FALSE)
- 
+library(ggplot2)
+library(nord)
+data.file<- "data/solar_deciles.feather"
+mv.df <-arrow::read_feather("data/morphetvale.feather")
+ss.names <- mv.df$substation |> unique()
   
 ```
 
@@ -29,7 +36,7 @@ knitr::opts_chunk$set(message = FALSE)
 
 Sunshot Industries  invests capital and know-how in energy intensive businesses  with  the prospect for delivering substantial CO2e abatement.
 
-Sunshot Industries builds on the vision espoused by Ross Garnaut, in his books Superpower and Reset, that Australia could and should take a leading role in the new low carbon economy. 
+Sunshot Industries builds on the vision espoused by Ross Garnaut in his books Superpower and Reset, that Australia could and should take a leading role in the new low carbon economy. 
 
 
 > *With unparalleled renewable energy resources and the necessary scientific skills, Australia is the natural home for an increasing proportion of global industry in a zero carbon future.*
@@ -67,10 +74,8 @@ This is particularly problematic as is still the case that solar ownership is hi
 
 <!-- ![Figure 1. Proportion of households with solar installations by wealth decile. 1 is the lowest wealth-decile,   10 is the highest [@BEST2021106890]](figs/wealth-decile.png) -->
 
-```{r fig1, fig.cap='Proportion of households with solar installations by wealth decile (1 is the lowest,  10  highest). Data sourced from ABS 2017–18 Survey of Income and Housing, [@BEST2021106890].', echo=FALSE }
+```{r wealthdeciles, fig.cap='Proportion of households with solar installations by wealth decile (1 is the lowest,  10  highest). Data sourced from ABS 2017–18 Survey of Income and Housing, [@BEST2021106890].', echo=FALSE }
 
-library(ggplot2)
-data.file<- "data/solar_deciles.feather"
 sd.df <-arrow::read_feather(data.file)
 ggplot(sd.df, aes(decile, households))+ 
   geom_bar(stat = "identity", width = .6, size=0, fill="orange")+
@@ -94,12 +99,9 @@ On top of this existing inequity, the rapid and ongoing influx of solar has begu
 This raises all sorts of equity questions. Is it fair for potential new adopters of solar to be locked out of the system? Who should have their solar generation constrained? Or alternatively, should the grid be augmented to allow more solar and equal access to solar, in which case who pays? It seems extremely unjust for those that cannot access or afford solar to foot the bill for those that can.
 
 
-```{r code, fig.cap='In regions where domestic solar output now regularly exceeds local demand, such as Morphet Vale  in South Australia,  flow reversals on DNSP zone substations is adding costs to grid operation', echo=FALSE}
-library(ggplot2)
-library(nord)
+```{r mvdemand, fig.cap='That domestic solar output now regularly exceeds local demand in daylight hours in suburban Australia is evidenced by flow reversals on DNSP zone substations. Here shown for the Morphett Vale East 66/11kV substation in the southern suburbs of Adelaide, South Australia, presented as the minimum demand by time of day in half hour daily increments for the month of November.', echo=FALSE}
+
 this.month=11 # determines month
-mv.df <-arrow::read_feather("data/morphetvale.feather")
-ss.names <- mv.df$substation |> unique()
 mv.hour.df <-mv.df |> 
   dplyr::group_by(year,month, hour) |>
   dplyr::summarise('average demand'=mean(MW, na.rm=T),
@@ -139,8 +141,27 @@ Affordability and accessibility were and remain key objectives for the energy sy
 
 Unless solar system owners fairly contribute to the use of the grid, those least able to least able to pay or participate in the energy transition will foot the bill.
 
- 
 \newpage
 
-## References  
+
+
+## Supplementary material
+
+### History
+
+<font size="3">
+Original version  published [online by the ABC](https://www.abc.net.au/religion/solar-justice-who-should-pay-for-the-grid/13376586), on June 7th, 2021.
+</font> 
+
+### Data Sources
+
+<font size="3"> 
+Solar installation by wealth group shown in Figure \@ref(fig:wealthdeciles) derived from the ABS 2017–18 Survey of Income and Housing as downloaded and processed by [@BEST2021106890].
+</font>
+
+<font size="3"> 
+`r  mv.df$substation |> unique()` substation demand data used in Figure \@ref(fig:mvdemand) downloaded  from [SA Power Networks](https://www.sapowernetworks.com.au/resource-library/?dateType=Date+Appearing+%28defaults+to+Date+Modified%29&daysold=-1&f_boolean_operator=and&f_displayMetadataFilterCounts=true&f_elem_id_0=108&f_elem_id_1=107&f_elem_id_2=113&f_filter_element_0=&f_filter_element_1=&f_filter_element_2=Resource&keywordRestrictToTitle=f&orderby=Rank&rpp=10&rst=form+submissions&str=substation&xcid=5318)  June 12, 2021.
+</font>
+
+### References  
 
