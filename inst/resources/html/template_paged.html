@@ -123,7 +123,7 @@ code {
   background-color: rgba(0, 0, 0, 0.04);
 }
 img {
-  max-width:100%;
+  max-width:85%;
   height: auto;
 }
 </style>
@@ -157,6 +157,7 @@ $endif$
 $for(author)$
 $if(author.name)$
 <h2 class="author">$author.name$</h2>
+<h2 class="other">$other$</h2>
 $if(author.affiliation)$
 <address class="author-afil">
 $author.affiliation$<br/>$endif$
@@ -166,6 +167,7 @@ $if(author.email)$
 $endif$
 $else$
 <h2 class="author">$author$</h2>
+<h2 class="other">$other$</h2>
 $endif$
 $endfor$
 $if(date)$

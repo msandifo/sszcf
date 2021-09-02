@@ -18,7 +18,7 @@ plot.mv <- ggplot(mv.hour.df |>
          subset(month==this.month & name %in% c("minimum demand") & year %in% c(2010,2011, 2012,2014, 2017, 2018,2019)), 
        aes(hour, value, col=factor(year)))+
   facet_grid(~name)+
-  hrbrthemes::theme_ipsum_rc(base_size = 15, 
+ sszcf::theme_sszcf_tw(base_size = 15, 
                              axis_title_size = 15,
                              axis_col = "#FF9900",
                              grid_col = "#FF9900")+

@@ -5,7 +5,7 @@ sd.df <-arrow::read_feather(source.file)
 plot.decile <-ggplot(sd.df, aes(decile, households))+ 
   geom_bar(stat = "identity", width = .6, size=0, fill="orange")+
   ylim(c(0,30))+
-  hrbrthemes::theme_ipsum_tw()+
+ sszcf::theme_sszcf_tw()+
   labs(#caption= "data sourced from ABS 2017–18 Survey of Income and Housing",
        y="% households", 
        x= "wealth decile")+

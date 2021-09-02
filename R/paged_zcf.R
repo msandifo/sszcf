@@ -15,11 +15,14 @@ paged_zcf <-
            front_img = "0",
            img_to_dark = TRUE,
            logo_to_white = FALSE,
-           other_css =   pkg_resource("css/style_zcf.css"),
+           type="short", 
+       #    other_css =   pkg_resource("css/style_zcf.css") 
            ...) {
     # arguments
+    if (type=="long") this.css = "css/style_zcf_long.css" else
+      this.css = "css/style_zcf.css"
     main_css <-
-      pkg_resource("css/style_zcf.css")
+      pkg_resource(this.css)
     pandoc_html <-
       pkg_resource("html/template_paged.html")
 
@@ -60,7 +63,8 @@ paged_zcf <-
 
     # template
     pagedown::html_paged(
-      css = c(other_css, main_css),
+    #  css = c(other_css, main_css),
+      css = c(  main_css),
       template = pandoc_html,
       front_cover = c(logo, front_img),
       back_cover = logo,
