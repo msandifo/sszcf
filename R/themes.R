@@ -279,3 +279,23 @@ theme_sszcf <- function(base_family="Arial Narrow", base_size = 11.5,
   ret
   
 }
+
+
+ms_theme <- function() {
+  
+  library(ggplot2)
+  theme_set(hrbrthemes::theme_modern_rc( axis_title_size = 12, base_size=14))
+  
+  theme_update(
+    strip.text.x=element_text(colour="white"),
+    line=element_line(size=.1),
+    plot.margin=margin(5,5,5,5) 
+  )
+  
+  update_geom_defaults("line", list(size = .2))#, col="lightblue"))
+  update_geom_defaults("smooth", list(size =.5,
+                                      alpha=.15,
+                                      se=T,
+                                      col="yellow",
+                                      fill="yellow" ))
+}
